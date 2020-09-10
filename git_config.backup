@@ -1,0 +1,38 @@
+[filter "lfs"]
+	process = git-lfs filter-process
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+	
+[user]
+	name = kale
+	email = 460412008@qq.com
+
+[http]
+
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	bra = branch -a
+	last = log -1 HEAD
+	cmd = commit --amend
+	prbs = pull --rebase origin
+	aa = add .
+	plrb = pull --rebase origin
+	ps = push origin
+	pl = pull origin
+	update = remote update origin --prune
+	refresh = fetch origin --prune
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+
+[credential]
+[http]
+	postBuffer = 524288000
+[credential]

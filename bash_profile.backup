@@ -1,0 +1,43 @@
+alias e.='explorer .'
+
+alias ls='ls --show-control-chars -F --color $*'
+alias ll='ls -al --show-control-chars --color $*'
+alias pwd='cd'
+
+alias cls='clear'
+alias ex="exit"
+
+alias history='cat -n "%CMDER_ROOT%\config\.history"'
+alias unalias='alias /d $1'
+
+alias vi='vim $*'
+alias cmderr='cd /d "%CMDER_ROOT%"'
+
+alias glg='git log --oneline --all --graph --decorate  $*'
+alias glst='git log -1 HEAD'
+alias gls='git log -2 HEAD'
+alias glog='git log -2 HEAD'
+
+alias gst='git status'
+alias gco='git checkout'
+
+alias gbr='git branch'
+alias gba='git branch -a'
+alias gbra='git branch -a'
+
+alias gaa='git add .'
+alias gsh='git stash'
+alias gsp='git stash pop'
+alias gdf='git diff'
+
+alias gcmd='git commit --amend'
+alias gprbs='git pull --rebase origin'
+alias grbs='git pull --rebase origin'
+
+alias gps='git push origin'
+alias gpl='git pull origin'
+
+alias gupdate='git remote update origin --prune'
+alias grefresh='git fetch origin --prune'
+
+alias gsbu='git submodule update'
